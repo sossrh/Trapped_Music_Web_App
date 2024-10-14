@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<taglib xmlns="http://java.sun.com/xml/ns/j2ee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+                            http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd"
+        version="2.0">
+    <tlib-version>1.0</tlib-version>
+    <short-name>mytag</short-name>
+    <uri>http://example.com/tags</uri>
+    
+    <tag>
+        <name>userDisplay</name>
+        <tag-class>meow.dhru.sarah.meow.UserDisplayTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>sessionCheck</name>
+        <tag-class>meow.dhru.sarah.meow.SessionCheckTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+
+    <tag>
+        <name>errorDisplay</name>
+        <tag-class>meow.dhru.sarah.meow.ErrorDisplayTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>message</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+</taglib>
